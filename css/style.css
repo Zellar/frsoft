@@ -96,7 +96,7 @@
     --nav-header-color: #E1E4E7;
     --header-bg-color: rgba(18, 21, 23, 0.5);
     --footer-bg-color: rgba(18, 21, 23, 0.5);
-    --bg-image: url("/images/bg.webp");
+    --bg-image: url("images/bg.webp");
     --bg-color: #1D2226;
     --btn-text-color: #FEFEFE;
     --btn-background-color: #1D6097;
@@ -110,8 +110,8 @@
     --mobile-nav-bg: #495156;
     --mobile-nav-color: #FEFEFE;
     --mobile-nav-alt-color: #A3ACB3;
-    --icon-theme: url('/images/icons/sun-icon.svg');
-    --crystal-img: url('/images/crystal2.webp');
+    --icon-theme: url('images/icons/sun-icon.svg');
+    --crystal-img: url('images/crystal2.webp');
 
     /* footer */
 
@@ -135,11 +135,11 @@
     --nav-header-color: #495156;
     --header-bg-color: rgba(255, 255, 255, 0.75);
     --footer-bg-color: rgba(255, 255, 255, 0.75);
-    --bg-image: url("/images/bg-white.webp");
+    --bg-image: url("images/bg-white.webp");
     --bg-color: #EDF3F9;
     --footer-nav-link-color: #495156;
     --footer-link-color: #495156;
-    --crystal-img: url('/images/white-theme-crystal.webp');
+    --crystal-img: url('images/white-theme-crystal.webp');
     --dropdown-bg-color: #fff;
 
 
@@ -149,7 +149,7 @@
     --mobile-nav-alt-color: #A3ACB3;
 
 
-    --icon-theme: url('/images/icons/moon-icon.svg')
+    --icon-theme: url('images/icons/moon-icon.svg')
 }
 
 html {
@@ -423,7 +423,7 @@ textarea:hover:focus {
             width: 18px;
             height: 18px;
             display: inline-block;
-            background: url('/images/icons/phone-incoming.svg');
+            background: url('images/icons/phone-incoming.svg');
             margin-left: 17px;
         }
 
@@ -465,7 +465,7 @@ textarea:hover:focus {
         display: inline-block;
         width: 20px;
         height: 20px;
-        /* background: url('/images/icons/burger-icon.svg'); */
+        /* background: url('images/icons/burger-icon.svg'); */
         cursor: pointer;
         position: absolute;
         left: 0;
@@ -592,7 +592,7 @@ textarea:hover:focus {
     .sub-nav-btn {
         width: 18px;
         height: 18px;
-        background: url('/images/icons/chevron-down.svg') center;
+        background: url('images/icons/chevron-down.svg') center;
         display: inline-block;
         position: relative;
         top: 50%;
@@ -769,7 +769,7 @@ textarea:hover:focus {
     width: 24px;
     height: 24px;
     display: inline-block;
-    background: url('/images/icons/close.svg') center;
+    background: url('images/icons/close.svg') center;
     background-repeat: no-repeat;
 }
 
@@ -778,7 +778,7 @@ textarea:hover:focus {
     position: relative;
     width: 20px;
     height: 20px;
-    background: url('/images/icons/burger-icon.svg') no-repeat center;
+    background: url('images/icons/burger-icon.svg') no-repeat center;
     margin-left: auto;
 }
 
@@ -881,7 +881,7 @@ textarea:hover:focus {
             border: none;
             width: 24px;
             height: 24px;
-            background: url('/images/icons/chevron-down.svg');
+            background: url('images/icons/chevron-down.svg');
             -webkit-transform: rotate(0);
                 -ms-transform: rotate(0);
                     transform: rotate(0);
@@ -1075,7 +1075,7 @@ textarea:hover:focus {
         .img-default {
             width: 1200px;
             height: 800px;
-            background: url('/images/about-img.webp');
+            background: url('images/about-img.webp');
             position: absolute;
             top: -100%;
             left: 0;
@@ -1105,7 +1105,7 @@ textarea:hover:focus {
         }
         @media(max-width: 768px) {
             .img-default {
-                background: url('/images/about-img_hover.webp');
+                background: url('images/about-img_hover.webp');
             }
         }
 
@@ -1123,7 +1123,7 @@ textarea:hover:focus {
             }
         }
             .img-default:hover {
-                background: url('/images/about-img_hover.webp');
+                background: url('images/about-img_hover.webp');
                 opacity: 1;
                 -webkit-transition: all 1s;
                 -o-transition: all 1s;
@@ -1287,7 +1287,7 @@ textarea:hover:focus {
                     width: 44px;
                     height: 44px;
                     background-color: var(--btn-background-color);
-                    background-image: url('/images/icons/arrow-down-right-sm.svg');
+                    background-image: url('images/icons/arrow-down-right-sm.svg');
                     background-repeat: no-repeat;
                     background-position: center;
                     top: 0;
@@ -1301,7 +1301,7 @@ textarea:hover:focus {
 
             .case_decoration {
                 position: absolute;
-                background-image: url('/images/icons/blue-arrow.svg');
+                background-image: url('images/icons/blue-arrow.svg');
                 background-repeat: no-repeat;
                 background-position: 100% 0%;
                 width: 100px;
@@ -1350,7 +1350,7 @@ textarea:hover:focus {
             }
 
             .cases_item-img:hover .case_decoration {
-                background-image: url('/images/icons/blue-arrow-grow.svg');
+                background-image: url('images/icons/blue-arrow-grow.svg');
                 width: 150px;
                 -webkit-transition: all 0.7s;
                 -o-transition: all 0.7s;
@@ -1426,7 +1426,7 @@ textarea:hover:focus {
         .info_img-block{
             max-width: 734px;
             height: 320px;
-            background-image: url('/images/info/ffd.png');
+            background-image: url('images/info/ffd.png');
             background-repeat: no-repeat;
             background-position: top;
             background-size: cover;
@@ -1460,7 +1460,7 @@ textarea:hover:focus {
         }
 
         .info_img:hover .info_img-block{
-            background-image: url('/images/info/ffd-hover.png');
+            background-image: url('images/info/ffd-hover.png');
             opacity: 1;
             -webkit-transition: all 1s;
             -o-transition: all 1s;
@@ -1471,7 +1471,7 @@ textarea:hover:focus {
             content: " ";
             display: inline-block;
             position: absolute;
-            background-image: url('/images/info/red-arrow.svg');
+            background-image: url('images/info/red-arrow.svg');
             background-repeat: no-repeat;
             width: 190px;
             height: 90px;
@@ -1483,7 +1483,7 @@ textarea:hover:focus {
             content: " ";
             display: inline-block;
             position: absolute;
-            background-image: url('/images/info/blue-arrow.svg');
+            background-image: url('images/info/blue-arrow.svg');
             background-repeat: no-repeat;
             width: 190px;
             height: 90px;
@@ -1680,7 +1680,7 @@ textarea:hover:focus {
                 position: relative;
                 width: 20px;
                 height: 20px;
-                -webkit-mask-image: url('/images/icons/arrow-down-right-sm.svg');
+                -webkit-mask-image: url('images/icons/arrow-down-right-sm.svg');
                 background-color: var(--main-text-color);
                 display: inline-block;
                 top: 5px;
@@ -1786,14 +1786,14 @@ textarea:hover:focus {
             }
 
             .clients-slider .splide__arrow--next {
-                background-image: url('/images/icons/chevron-right.svg');
+                background-image: url('images/icons/chevron-right.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 right: 0;
             }
 
             .clients-slider .splide__arrow--prev {
-                background-image: url('/images/icons/chevron-left.svg');
+                background-image: url('images/icons/chevron-left.svg');
                 background-repeat: no-repeat;
                 background-position: center;
                 left: 0;
@@ -2130,15 +2130,15 @@ footer a:active {
 }
 
 .footer-list_icon--adress {
-    background-image: url('/images/icons/map.svg');
+    background-image: url('images/icons/map.svg');
 }
 
 .footer-list_icon--tel {
-    background-image: url('/images/icons/tel.svg');
+    background-image: url('images/icons/tel.svg');
 }
 
 .footer-list_icon--mail {
-    background-image: url('/images/icons/mail.svg');
+    background-image: url('images/icons/mail.svg');
 }
 
 .info_img-wrapper-mob {
