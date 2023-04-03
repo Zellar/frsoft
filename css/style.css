@@ -666,6 +666,7 @@ textarea:hover:focus {
 .header-nav-mob_nav {
     background: var(--mobile-nav-bg);
     padding: 8px 24px;
+    padding-bottom: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
