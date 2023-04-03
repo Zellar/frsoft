@@ -141,11 +141,11 @@
     --footer-link-color: #495156;
     --crystal-img: url('../images/white-theme-crystal.webp');
     --dropdown-bg-color: #fff;
+    --mobile-nav-color: #1D2226;
+    --mobile-nav-bg: #EDF3F9;
 
 
     --slider-item-bg: #D1D4D7;
-    --mobile-nav-bg: #495156;
-    --mobile-nav-color: #FEFEFE;
     --mobile-nav-alt-color: #A3ACB3;
 
 
@@ -505,7 +505,7 @@ textarea:hover:focus {
         gap: 8px;
         background: var(--dropdown-bg-color);
         padding: 4px 24px;
-        top: 45px;
+        top: 36px;
         left: -24px;
         visibility: hidden;
         -webkit-transition: all 0.7s;
@@ -734,9 +734,9 @@ textarea:hover:focus {
 #dropdown-menu-mob {
     height: 0;
     overflow: hidden;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
     gap: 12px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -755,9 +755,9 @@ textarea:hover:focus {
     margin-top: 12px;
     visibility: visible;
     height: 100%;
-    -webkit-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
 }
 
 .close-btn {
@@ -779,7 +779,10 @@ textarea:hover:focus {
     position: relative;
     width: 20px;
     height: 20px;
-    background: url('../images/icons/burger-icon.svg') no-repeat center;
+    -webkit-mask-image: url('../images/icons/burger-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--main-text-color);
     margin-left: auto;
 }
 

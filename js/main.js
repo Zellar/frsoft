@@ -64,17 +64,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     openMobMenu(burgerMenuMob, mobNavMenu, closeBtn);
 
-    // let accordionAnimate = () => {
-    //     document.addEventListener('click', (e) => { 
-    //         if (!mobDropdownMenu.classList.contains('active')){
-    //             mobDropdownMenu.style.maxHeight = 0;
-    //         } else {
-    //             mobDropdownMenu.style.maxHeight = mobDropdownMenu.scrollHeight + "px";
-    //         } 
-    //     })
-    // };
+    let accordionAnimate = () => {
+        document.addEventListener('click', (e) => { 
+            if (!mobDropdownMenu.classList.contains('active')){
+                mobDropdownMenu.style.maxHeight = null;
+            } else {
+                mobDropdownMenu.style.maxHeight = mobDropdownMenu.scrollHeight + "px";
+            } 
+        })
+    };
 
-    // accordionAnimate();
+    accordionAnimate();
 
     openDropwodnMenu(dropdownBtn, dropdownMenu);
     openDropwodnMenu(burgerMenuBtn, burgerMenu);
