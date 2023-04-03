@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="/css/bvselect.css">
+    <link rel="stylesheet" href="/css/splide.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>FRSoft</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="header-wrapper">
+                <div class="header-logo">
+                    <img src="images/icons/logo.svg" alt="">
+                </div>
+
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li>
+                            <a href="#">
+                                о компании
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a  href="#">
+                                решения
+                            </a>
+                            <span id="subnav-btn" class="sub-nav-btn"></span>
+                            <ul id="dropwodn-menu" class="sub-nav">
+                                <li><a href="#">КСУП «IQ Print»</a></li>
+                                <li><a href="#">СУЭО «IQueue»</a></li>
+                                <li><a href="#">IQ Blank</a></li>
+                                <li><a href="#">AgroMC</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                партнерам
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                импортозамещение
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                где купить
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                наши клиенты
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                контакты
+                            </a>
+                        </li>
+                        <li class="burger-menu">
+                            <span class="burger-icon">
+                                <svg id="burger-btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.0001 16H2.00012M18.0001 10H2.00012M18.0001 4H2.00012" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <ul class="burger-menu_list">
+                                <li><a href="#">Где купить</a></li>
+                                <li><a href="#">Наши клиенты</a></li>
+                                <li><a href="#">Контакты</a></li>
+                                <li><a href="#">Импортозамещение</a></li>
+                                <li><a href="#">Партнерам</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="contacts">
+                    <div class="contacts_tel">+7 (916) 578-09-95</div>
+                    <div class="contacts_change-lang">
+                        <select id="change-lang">
+                            <option value="1" selected>Ру</option>
+                            <option value="2">En</option>
+                          </select>
+                    </div>
+                    <button class="change-theme-btn"></button>
+                </div>
+                <div class="mobile-nav-btn" id="burger-btn-mob">
+                    <!-- <span class="burger-icon"> -->
+                        <!-- <svg  width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.0001 16H2.00012M18.0001 10H2.00012M18.0001 4H2.00012" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                        </svg> -->
+                    <!-- </span> -->
+                </div>
+
+                <div class="header-nav-mob">
+                    <div class="header-nav-mob_top-nav">
+                        <div class="header-logo">
+                            <img src="images/icons/logo.svg" alt="">
+                        </div>
+                        <div class="contacts">
+                            <div class="contacts_change-lang">
+                                <select id="change-lang-mob">
+                                    <option value="1" selected>Ру</option>
+                                    <option value="2">En</option>
+                                  </select>
+                            </div>
+                            <button class="change-theme-btn"></button>
+                            <button id="mob-close-btn" class="close-btn">
+                                <!-- <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.8333 4.16675L4.16663 15.8334M15.8333 15.8334L4.16663 4.16675" stroke="#2C8BD8" stroke-width="2" stroke-linecap="round"/>
+                                </svg>  -->
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="header-nav-mob_nav">
+                        <ul class="mob-nav-list">
+                            <li>
+                                <a href="#">
+                                    О компании
+                                </a>
+                            </li>
+                            <li class="dropdown">
+                                <a  href="#">
+                                    Решения
+                                    <span  class="sub-nav-btn">
+                                        <svg id="subnav-btn-mob" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.8 9.6L12 14.4L7.20005 9.6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <ul id="dropdown-menu-mob" class="sub-nav">
+                                    <li><a href="#">КСУП «IQ Print»</a></li>
+                                    <li><a href="#">СУЭО «IQueue»</a></li>
+                                    <li><a href="#">IQ Blank</a></li>
+                                    <li><a href="#">AgroMC</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Партнерам
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Импортозамещение
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Где купить
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Наши клиенты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer-list">
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--adress"></span>Москва, ул. Вавилова, д. 9а, стр. 5</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--tel"></span>+7 (495) 114-51-95</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--tel"></span>+7 (916) 578-09-95</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--tel"></span>+7 (909) 655-96-20</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--mail"></span>info@1rsoft.com</a></li>
+                        </ul>
+                    </div>
+                       
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section class="about">
+                <div class="about_text col-12 col-md-6">
+                    <div class="about_text-wrapper">
+                        <h3>кто мы</h3>
+                        <h1>Профессионалы в области программирования <br> и разработки программного обеспечения</h1>
+                        <p>Разработка инновационных программных решений для всех отраслей российской экономики — основное <br> направление деятельности компании. Нашими клиентами являются представители государственных и <br> коммерческих организаций, работающих во всех экономических сферах. Нам под силу разработка ПО для <br> любого, даже самого сложного направления деятельности фирм и объединений.</p>
+                        <button class="btn">связаться с нами <span class="btn-icon"></span></button>
+                    </div>
+                    <div class="decoration-crystal about_decoration"></div>
+                </div>
+                <div class="about-img col-12 col-md-6">
+                    <div class="img-default">
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="cases main_section">
+                <h3>что мы делаем</h3>
+                <h2>Наши решения</h2>
+                <p>Мы разработали и запатентовали три уникальных продукта, более подробную информацию можно найти в разделе "Продукты компании".</p>
+                <div class="cases_items">
+                    <div class="cases_item">
+                        <a href="#" class="cases_item-img">
+                            <img src="/images/cases/case_1.webp" alt="iq-print">
+                            <div class="case_decoration"></div>
+                            <img class="img-mob" src="/images/cases/ksup-mob.png" alt="">
+                        </a>
+                        <div class="cases_item-text">
+                            <h4>КСУП «IQ Print»</h4>
+                            <p>Система корпоративной печати IQPRINT - это российское ПО, внесенное в реестр Минкомсвязи (рег. ном. 11859), включает в себя российскую техническую поддержку и терминалы российского производства.</p>
+                        </div>
+                    </div>
+
+                    <div class="cases_item">
+                        <a href="#" class="cases_item-img">
+                            <img src="/images/cases/case_2.webp" alt="IQ-Blank">
+                            <div class="case_decoration"></div>
+                            <img class="img-mob" src="/images/cases/sueo-mob.png" alt="">
+                            
+                        </a>
+                        <div class="cases_item-text">
+                            <h4>IQ Blank</h4>
+                            <p>Специальное ПО IQblank для печати на бланках аттестатов, дипломов и приложений к ним. Авторизованные представители системы школьного образования могут сами распечатывать данные об аттестации учеников. Элементы защиты, в том числе QR-коды поддерживаются. Программа обеспечивает автономную, оперативную и самостоятельную работу.</p>
+                        </div>
+                    </div>
+
+                    <div class="cases_item">
+                        <a href="#" class="cases_item-img">
+                            <img src="/images/cases/case_3.webp" alt="IQueue">
+                            <div class="case_decoration"></div>
+                            <img class="img-mob" src="/images/cases/iq-blank-mob.png" alt="">
+                            
+                        </a>
+                        <div class="cases_item-text">
+                            <h4>СУЭО «IQueue»</h4>
+                            <p>Инновационная система управления электронной очередью IQUEUE упорядочивает потоки посетителей в организации. Она помогает поддерживать порядок в залах обслуживания, ускоряет работу сотрудников, повышает лояльность клиентов. Установка системы способствует мониторингу поступающих данных и сбору журнала событий. Электронный продукт прост в управлении – можно настроить шаблоны очередей, экранные формы.</p>
+                        </div>
+                    </div>
+
+                    <div class="cases_item">
+                        <a href="#" class="cases_item-img">
+                            <img src="/images/cases/case_4.webp" alt="AgroMC">
+                            <div class="case_decoration"></div>
+                            <img class="img-mob" src="/images/cases/agromc.png" alt="">
+                        </a>
+                        <div class="cases_item-text">
+                            <h4>AgroMC</h4>
+                            <p>AgroMC – универсальное аппаратно-программное устройство для управления работой теплиц, в том числе для контроля функционирования внешних устройств. В программе настраивают график индивидуального полива растений на срок до 6 месяцев. У аграриев появляется возможность контролировать PH-баланс, состояние растворов солей, температуру субстратов и их влажность.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="info main_section">
+                <div class="info_img">
+                    <div class="info_img-block"></div>
+                    <div class="info_img-wrapper">
+                        <img class="info_img-girl" src="/images/info/girl 1.webp" alt="">
+                        <img class="info_img-girl-2" src="/images/info/girl-hover.webp" alt="">
+                        <img class="info_img-girl-mob" src="/images/info/women-mob.png" alt="">
+                    </div>
+                </div>
+                <div class="info_img-wrapper-mob">
+                    <img src="/images/info/women-mini-mob.png" alt="">
+                </div>
+                <div class="info_text">
+                    <h3>информация</h3>
+                    <h2>О компании</h2>
+                    <p>«First Rate Soft» – российская Компания, основной деятельностью которой является внедрение программно-аппаратных решений для организации и оптимизации рабочих процессов во всех бизнес-сферах и направлениях любого масштаба.</p>
+                    <p>Мы открыты к предложениям разработчиков и партнеров для совместного создания самых инновационных российских продуктов.</p>
+                    <a href="#" class="btn">подробнее</a>
+                    <!-- <div class="info_link-wrapper">
+                        <a href="#" class="info_link">подробнее</a>
+                    </div> -->
+                    <div class="decoration-crystal info_decoration"></div>
+                </div>
+            </section>
+            <section class="clients main_section">
+                <div class="clients_title">
+                    <h3>клиенты</h3>
+                    <a class="clients_title-link" href="#">Подробнее</a>
+                </div>
+                <h2>Наши клиенты</h2>
+               <div class="clients-slider">
+                    <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="wrapper">
+                                        <div class="clients-slider_item">
+                                            <img class="clients-slider_img" src="/images/clients/slider-1.png" alt="">
+                                            <img class="clients-slider_img-hover" src="/images/clients/slider-1-hover.png" alt="">
+                                            <!-- заготовка на фильтр -->
+    
+                                            <!-- <svg id="svgfilters" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                <defs>
+                                                    <filter id="blue" x="-10%" y="-10%" width="120%" height="120%" filterUnits="objectBoundingBox" primitiveUnits="userSpaceOnUse" color-interpolation-filters="sRGB" style="visibility: hidden">
+                                                        <feColorMatrix type="matrix" values="1 0 0 0 0
+                                                                1 0 0 0 0
+                                                                1 0 0 0 0
+                                                                0 0 0 1 0" in="SourceGraphic" result="colormatrix"/>
+                                                        <feComponentTransfer in="colormatrix" result="componentTransfer">
+                                                                <feFuncR type="table" tableValues="0.11 0.41"/>
+                                                            <feFuncG type="table" tableValues="0.38 0.62"/>
+                                                            <feFuncB type="table" tableValues="0.59 0.79"/>
+                                                            <feFuncA type="table" tableValues="0 1"/>
+                                                          </feComponentTransfer>
+                                                        <feBlend mode="normal" in="componentTransfer" in2="SourceGraphic" result="blend"/>
+                                                    </filter>
+                                                </defs>
+                                            </svg> -->
+    
+                                            <!-- заготовка на фильтр -->
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="clients-slider_item">
+                                        <img class="clients-slider_img" src="/images/clients/slider-2.png" alt="">
+                                        <img class="clients-slider_img-hover" src="/images/clients/slider-2-hover.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="clients-slider_item">
+                                        <img class="clients-slider_img" src="/images/clients/slider-3.png" alt="">
+                                        <img class="clients-slider_img-hover" src="/images/clients/slider-3-hover.png" alt="">
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="clients-slider_item">
+                                        <img class="clients-slider_img" src="/images/clients/slider-4.png" alt="">
+                                        <img class="clients-slider_img-hover" src="/images/clients/slider-4-hover.png" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                  </div>
+               </div>
+            </section>
+            <section class="feedback main_section">
+                <div class="feedback_text col-12 col-lg-6">
+                    <div class="feedback_text-wrapper">
+                        <h3>Контакты</h3>
+                        <h2>Обратитесь к нам через любую удобную Вам <br> форму связи, если у вас есть вопросы!</h2>
+                        <p>Заполните форму обратной связи на сайте или позвоните по телефону. Ждем ваших писем по электронной почте и сообщений в мессенджерах. Вы сможете получить консультацию, которая даст ответы на ваши вопросы и поможет выбрать лучшее решение.</p>
+                    </div>
+                </div>
+                <div class="feedback_form col-12 col-lg-6">
+                    <form action="">
+                        <div class="form-wrapper">
+                            <label class="req" for="name">Ваше имя</label>
+                            <input type="text" name="name" placeholder="...">
+                        </div>
+                        <div class="form-wrapper">
+                            <label class="req" for="email">E-mail</label>
+                            <input type="email" name="email" placeholder="...">
+                        </div>
+                        <div class="form-wrapper form-wrapper--big">
+                            <label class="req" for="text">Введите сообщение</label>
+                            <textarea type="text" name="text" placeholder="..." rows="3"></textarea>
+                        </div>
+                        <button class="btn">отправить сообщение</button>
+                        <p>Нажимая кнопку «Отправить сообщение» я даю согласие <br> на обработку <strong>персональных данных</strong>.</p>
+                    </form>
+                </div>
+                
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-wrapper">
+            <div class="container">
+                <div class="footer-row">
+                    <div class="footer-col">
+                        <div class="footer-logo">
+                            <img src="images/footer-logo.svg" alt="">
+                        </div>
+                        <div class="footer-col_wrapper">
+                            <a href="#">Политика конфиденциальности</a>
+                            <span class="copyright">© ООО «FRsoft» 2023</span>
+                        </div>
+                    </div>
+                    <div class="footer-col">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        о компании
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        партнерам
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        импортозамещение
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        где купить
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        наши клиенты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-list">
+                            <li><a href="#">Решения</a></li>
+                            <li><a href="#">КСУП «IQ Print»</a></li>
+                            <li><a href="#">СУЭО «IQueue»</a></li>
+                            <li><a href="#">IQ Blank</a></li>
+                            <li><a href="#">AgroMC</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <ul class="footer-list">
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--adress"></span>Москва, ул. Вавилова, д. 9а, стр. 5</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--tel"></span>+7 (495) 114-51-95</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--tel"></span>+7 (916) 578-09-95</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--tel"></span>+7 (909) 655-96-20</a></li>
+                            <li><a href="#"><span class="footer-list_icon footer-list_icon--mail"></span>info@1rsoft.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="decoration-crystal footer_decoration"></div>
+            </div>
+        </div>
+        <img src="/images/footer-man.webp" alt="" class="footer-big-img">
+    </footer>
+
+
+    <script src="/js/bvselect.js"></script>
+    <script src="/js/splide.min.js"></script>
+    <script src="/js/main.js" ></script>
+</body>
+</html>
